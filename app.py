@@ -8,8 +8,7 @@ stores = [
         "items": [
             {
             "name": "Chair",
-            "price": 15.99,
-            "time": "13:10"
+            "price": 15.99
             }
         ]
         
