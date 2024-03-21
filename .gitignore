@@ -1,3 +1,5 @@
 terraform/terraform.tfvars
-terraform/.terraform*
-OLD/terraform.tfvars
+terraform/awsk8s/.terraform*
+terraform/awsk8s/.terraform.lock.hcl
+terraform/awsk8s/terraform.tfstate
+terraform/awsk8s/terraform.tfstate.backup
