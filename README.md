@@ -58,9 +58,8 @@ aws ecr create-repository --repository-name lab02 --region us-east-2
 2. Store the IAM user access key in GitHub Actions secrets named `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`
 ```Git
 Repo Settings > Secrets and variables > Actions > Repository secrets > New repository secret 
-
-[!NOTE] Repeat for both `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`
 ```
+[!NOTE] Repeat for both `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`
 
 3. Make a minor change in any repo file, commit and push to the master. It will start the deployment in the AWS EKS
 
