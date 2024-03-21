@@ -1,4 +1,4 @@
-# Lab 02 SRE Academy on AWS
+# Lab 02 SRE Academy on AWS Elastic Kubernetes Service
 
 ## Prerequisites
 
