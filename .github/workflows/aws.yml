@@ -6,7 +6,7 @@ on:
 
 env:
   ECR_REPOSITORY: lab02
-  EKS_CLUSTER_NAME: eks-yHSOkBP5
+  EKS_CLUSTER_NAME: eks-lab02
   AWS_REGION: us-east-2
 
 jobs:
