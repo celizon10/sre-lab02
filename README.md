@@ -1,10 +1,53 @@
-In this repository:
+# Lab 02 SRE Academy on AWS
 
-https://github.ibm.com/jacob-villegas/sre-test
+## Prerequisites
 
-Git repository: git@github.ibm.com:jacob-villegas/sre-test.git
+- Have installed [Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
+- Have installed [GIT](https://git-scm.com/)
+- Have an active AWS account
+- Have installed [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 
-There is the necessary code to run a simple rest-api in a docker container that returns a json file.
+## Procedure
+
+### Create AWS EKS (Kubernetes cluster on AWS)
+
+1. Configure AWS CLI 
+```Shell
+aws configure
+```
+2. Clone the repo and access the directory
+```Shell
+git clone https://github.com/celizon10/sre-lab02.git && cd sre-lab02
+```
+
+3. Change directory to the terraform directory
+```Shell
+cd terraform
+```
+
+4. Initialize terraform
+```Shell
+terraform init
+```
+
+5. Validate terraform files
+```Shell
+terraform validate
+```
+
+6. Make sure the procedure is ok by doing a plan of the terrraform execution
+```Shell
+terraform plan
+```
+
+7. Create the kubernetes cluster
+```Shell
+terraform apply
+```
+
+
+
+
 
 Exercise
 - Create your own GIT repository, within, Implement the necessary automation to deploy the container in the cloud provider of your choice (IBM Cloud, AWS, GCP, etc.).
