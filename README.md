@@ -79,6 +79,8 @@ You can monitor the deployment in the `Actions` Tab in your repository.
 
     2. Select the cluster that you previously created
 
-    3. Select services and select the service created for the app
+    3. Select `resources` tab and then services and select the service created for the app `kubernetes-demo-hello-app-service`
+
+    4. Open the URL of the load balancer and add http://<URL>:5000/store
 
 
