@@ -3,3 +3,9 @@ variable "region" {
   type        = string
   default     = "us-east-2"
 }
+variable "db-username" {
+  type = string
+}
+variable "db-password" {
+  type = string
+}
