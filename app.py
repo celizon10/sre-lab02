@@ -44,10 +44,14 @@ def validateLogin():
         cursor.callproc('sp_validateLogin', (_username,))
         data = cursor.fetchall()
         
+        cursor.close()
+        conn.close()
+        
         if len(data) > 0:
             if data[0][3] == _password:
                 session['user'] = data[0][0]
                 return redirect('/userHome')
+            
             else:
                 print(str(data[0][3]))
                 return render_template('error.html', error='Wrong Email address or Password')
@@ -55,9 +59,9 @@ def validateLogin():
             return render_template('error.html', error='Wrong entered data Email address or Password')
     except Exception as e:
         return render_template('error.html', error=str(e))
-    finally:
-        cursor.close()
-        conn.close()
+    # finally:
+        # cursor.close()
+        # conn.close()
 
 @app.route('/api/signup', methods=['POST'])
 def signUp():
