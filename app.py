@@ -88,7 +88,7 @@ def signUp():
     except Exception as e:
         return json.dumps({'error': str(e)})
     finally:
-        cursor.close()
+        # cursor.close()
         conn.close()
 
 
