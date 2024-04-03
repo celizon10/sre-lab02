@@ -10,7 +10,7 @@ app = Flask(__name__)
 app.config['MYSQL_DATABASE_USER'] = 'admin'
 app.config['MYSQL_DATABASE_PASSWORD'] = 'adminpassword'  
 app.config['MYSQL_DATABASE_DB'] = 'BucketList'
-app.config['MYSQL_DATABASE_HOST'] = 'awslabproject.cj4geok6kpbh.us-east-2.rds.amazonaws.com'
+app.config['MYSQL_DATABASE_HOST'] = 'awslabproject.cj4geok6kpbh.us-east-2.rds.amazonaws.com:3306'
 mysql.init_app(app)
 
 app.secret_key = 'app secret key'
