@@ -4,8 +4,10 @@ WORKDIR /app
 COPY requirements.txt requirements.txt 
 RUN pip install -r requirements.txt
 COPY app.py app.py
-COPY static static
-COPY temmplates templates
+RUN mkdir -p /app/static
+RUN mkdir -p /app/templates
+COPY templates/* templates/.
+COPY static/* static/.
 
 
 CMD ["flask", "run", "--host", "0.0.0.0"]
