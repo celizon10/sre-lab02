@@ -6,13 +6,13 @@ mysql = MySQL()
 app = Flask(__name__)
 
 # MySQL configurations
-app.config['MYSQL_DATABASE_USER'] = ${{ secrets.DB_USER }}
-app.config['MYSQL_DATABASE_PASSWORD'] = ${{ secrets.DB_PASSWORD }}  
+app.config['MYSQL_DATABASE_USER'] = 'admin'
+app.config['MYSQL_DATABASE_PASSWORD'] = 'adminpassword'  
 app.config['MYSQL_DATABASE_DB'] = 'awslabproject'
 app.config['MYSQL_DATABASE_HOST'] = 'awslabproject.cj4geok6kpbh.us-east-2.rds.amazonaws.com'
 mysql.init_app(app)
 
-app.secret_key = ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+app.secret_key = 'app secret key'
 
 
 
