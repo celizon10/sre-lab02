@@ -80,6 +80,9 @@ def signUp():
             if len(data) == 0:
                 conn.commit()
                 return json.dumps({'message': 'User created successfully !'})
+            
+                cursor.close()
+                conn.close()
             else:
                 return json.dumps({'error': str(data[0])})
         else:
@@ -87,9 +90,9 @@ def signUp():
 
     except Exception as e:
         return json.dumps({'error': str(e)})
-    finally:
-        # cursor.close()
-        conn.close()
+    # finally:
+    #     cursor.close()
+    #     conn.close()
 
 
 @app.route('/userhome')
