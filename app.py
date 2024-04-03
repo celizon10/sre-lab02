@@ -12,7 +12,7 @@ app.config['MYSQL_DATABASE_DB'] = 'awslabproject'
 app.config['MYSQL_DATABASE_HOST'] = 'edit'
 mysql.init_app(app)
 
-app.secret_key = 'why would I tell you my secret key?'
+app.secret_key = ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
 
 
