@@ -1,10 +1,10 @@
 from flask import Flask, render_template, json, request, redirect, session
-from flaskext.mysql import MySQL
-# from flask_mysqldb import MySQL
+# from flaskext.mysql import MySQL
+from flask_mysqldb import MySQL
 from werkzeug.security import generate_password_hash, check_password_hash
 
-mysql = MySQL()
 app = Flask(__name__)
+mysql = MySQL(app)
 
 # MySQL configurations
 app.config['MYSQL_DATABASE_USER'] = 'admin'
