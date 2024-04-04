@@ -1,5 +1,7 @@
 # Lab 02 SRE Academy on AWS Elastic Kubernetes Service
 
+![image](https://github.com/celizon10/sre-lab02/assets/66286785/7ef5839f-4074-4ce2-b926-3ef988663e4e)
+
 ## Prerequisites
 
 - Have installed [Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
