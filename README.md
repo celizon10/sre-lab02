@@ -2,6 +2,8 @@
 
 ![image](https://github.com/celizon10/sre-lab02/assets/66286785/7ef5839f-4074-4ce2-b926-3ef988663e4e)
 
+This is a Lab that uses Terraform to create a AWS EKS Cluster, AWS RDS as the web app database, and also deploy an application usign Ci/CD with github actions. And addign IBM Instana to monitoring and observability.
+
 ## Prerequisites
 
 - Have installed [Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
