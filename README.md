@@ -10,6 +10,7 @@ This is a Lab that uses Terraform to create a AWS EKS Cluster, AWS RDS as the we
 - Have installed [GIT](https://git-scm.com/)
 - Have an active AWS account. Make sure to keep the `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`
 - Have installed [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+- Have an active installation of [IBM Instana](https://instana.com/)
 
 ## Procedure
 
@@ -86,5 +87,6 @@ You can monitor the deployment in the `Actions` Tab in your repository.
     3. Select `resources` tab and then services and select the service created for the app `kubernetes-demo-hello-app-service`
 
     4. Open the URL of the load balancer and add http://"<URL>":5000/store
+  
 
 
